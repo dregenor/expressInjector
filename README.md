@@ -4,8 +4,7 @@ expressInjector
 expressjs middleware for injecting some code in result
 
 usage
-
-var getSnippet = function(){
+`var getSnippet = function(){
      return '<!-- labelSimple -->' +
              '<div>simple snippet</div>';
  }
@@ -14,17 +13,15 @@ var snippetExists = function(body){
     return body.indexOf('labelSimple')>=0;
 }
 
-var placeholder = "<simpleSnippetPlaceholder/>";
+var placeholder = "<simpleSnippetPlaceholder/>";`
 
-if placeholder are not specified then snippet was inserted after <body> tag
+if placeholder are not specified then snippet was inserted after '<body>' tag
 
-app.use(require('expressInjector')(getSnippet,snippetExists,placeholder));
-
+` app.use(require('expressInjector')(getSnippet,snippetExists,placeholder));`
 
 in index.html or other html file
 
-
-<html>
+`<html>
     <head></head>
     <body>
         <div>
@@ -32,11 +29,10 @@ in index.html or other html file
         </div>
         <simpleSnippetPlaceholder/>
     </body>
-</html>
+</html>`
 
 in result we are have
-
-<html>
+`<html>
     <head></head>
     <body>
         <div>
@@ -44,4 +40,4 @@ in result we are have
         </div>
         <div>simple snippet</div>
     </body>
-</html>
+</html>`
