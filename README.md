@@ -4,6 +4,7 @@ expressInjector
 expressjs middleware for injecting some code in result
 
 usage
+---------------
 
     var getSnippet = function(){
          return '<!-- labelSimple -->' +
