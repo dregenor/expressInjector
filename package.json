@@ -1,5 +1,5 @@
 {
-  "name": "expressInjector",
+  "name": "express-injector",
   "version": "0.0.1",
   "description": "expressjs middleware for injecting some code in result",
   "main": "index.js",
